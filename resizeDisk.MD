@@ -6,15 +6,13 @@ lsblk
 ```
 
 Use a tool like growpart to resize the existing partition to fill the available space.This will resize the fourth partition (nvme0n1p4) to use the remaining unallocated space on the disk.
+
 ```
 sudo growpart /dev/nvme0n1 4
-
+```
 if not work above command, then you can use below command
 ```
 sudo growpart /dev/xvda4 4
-```
-
- 
 ```
 
 Extend the Logical Volumes
